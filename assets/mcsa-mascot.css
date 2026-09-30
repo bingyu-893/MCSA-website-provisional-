@@ -1,0 +1,106 @@
+/* Only this component uses the mcsa-mascot prefix. */
+.mcsa-mascot {
+  position: absolute;
+  left: var(--mascot-left, 100%);
+  top: 50%;
+  width: var(--mascot-size, 260px);
+  transform: translateY(-50%);
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.mcsa-mascot__art {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.mcsa-mascot__body {
+  transform-origin: 660px 1130px;
+  animation: mcsa-mascot-breathe 6s ease-in-out infinite;
+}
+
+.mcsa-mascot__arm {
+  transform-origin: 428px 862px;
+  animation: mcsa-mascot-wave 6s ease-in-out infinite;
+}
+
+.mcsa-mascot__blink {
+  opacity: 0;
+  animation: mcsa-mascot-blink 6s linear infinite;
+}
+
+.mcsa-mascot__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin: -6px 12px 0 auto;
+  border: 1px solid #ffffff66;
+  border-radius: 50%;
+  background: #9b102980;
+  color: #fff;
+  font: 600 12px/1 Arial, sans-serif;
+  cursor: pointer;
+}
+
+.mcsa-mascot__toggle:hover { background: #790c21; }
+.mcsa-mascot__toggle:focus-visible { outline: 3px solid #ffe094; outline-offset: 3px; }
+.mcsa-mascot__toggle[hidden] { display: none; }
+
+/* On narrow screens the mascot gets its own space below the white card. */
+.hero-art.mcsa-mascot-below {
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 12px;
+}
+
+.mcsa-mascot-below .mcsa-mascot {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: clamp(165px, 23vw, 225px);
+  align-self: flex-end;
+  margin: 0 12px 0 0;
+}
+
+.mcsa-mascot[data-paused="true"] .mcsa-mascot__body,
+.mcsa-mascot[data-paused="true"] .mcsa-mascot__arm,
+.mcsa-mascot[data-paused="true"] .mcsa-mascot__blink {
+  animation-play-state: paused;
+}
+
+.mcsa-mascot[data-still="true"] .mcsa-mascot__body,
+.mcsa-mascot[data-still="true"] .mcsa-mascot__arm,
+.mcsa-mascot[data-still="true"] .mcsa-mascot__blink {
+  animation: none;
+}
+
+@keyframes mcsa-mascot-wave {
+  0%, 5%, 38%, 100% { transform: rotate(0deg); }
+  11%, 25% { transform: rotate(9deg); }
+  18%, 32% { transform: rotate(-9deg); }
+}
+
+@keyframes mcsa-mascot-breathe {
+  0%, 38%, 100% { transform: translateY(0); }
+  18%, 66% { transform: translateY(-7px); }
+}
+
+@keyframes mcsa-mascot-blink {
+  0%, 43%, 47%, 78%, 82%, 100% { opacity: 0; }
+  44%, 46%, 79%, 81% { opacity: 1; }
+}
+
+@media (max-width: 760px) {
+  .mcsa-mascot-below .mcsa-mascot { margin-right: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mcsa-mascot__body, .mcsa-mascot__arm, .mcsa-mascot__blink { animation: none; }
+}
