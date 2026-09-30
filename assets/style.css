@@ -164,12 +164,25 @@ textarea {
   display: flex;
   align-items: center;
   gap: 12px;
-  flex-shrink: 0
+  min-width: 0
+}
+
+.brand>span {
+  min-width: 0
+}
+
+.brand b,
+.brand small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
 }
 
 .brand img {
   width: 55px;
   height: 55px;
+  flex-shrink: 0;
   object-fit: contain
 }
 
@@ -919,17 +932,19 @@ textarea {
 
 @media(max-width:1080px) {
   .header-inner {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
     gap: 15px
   }
 
   .menu-button {
     display: block;
-    margin-left: auto
+    margin-left: 0
   }
 
   .header-inner nav {
     display: none;
+    grid-column: 1 / -1;
     order: 4;
     width: 100%;
     flex-basis: 100%;
@@ -1317,6 +1332,8 @@ textarea {
 .language-control {
   display: flex;
   align-items: center;
+  width: max-content;
+  margin-left: auto;
   border: 1px solid #efb8bd;
   border-radius: 40px;
   padding: 3px 8px;
@@ -1325,14 +1342,31 @@ textarea {
   flex-shrink: 0
 }
 
-.language-control>span {
-  background: #bd2432;
+.language-control:focus-within {
+  outline: 2px solid var(--red);
+  outline-offset: 3px
+}
+
+.language-control #language:focus {
+  outline: none
+}
+
+.language-control>.language-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--red);
   border-radius: 50%;
-  width: 26px;
-  height: 26px;
-  color: #fff;
-  text-align: center;
-  line-height: 26px
+  width: 28px;
+  height: 28px;
+  color: #fff
+}
+
+.language-icon>svg {
+  display: block;
+  width: 20px;
+  height: 20px
 }
 
 #language {
@@ -1704,8 +1738,9 @@ textarea {
     margin-bottom: 12px
   }
 
-  .language-control>span {
-    display: none
+  .language-control>.language-icon {
+    width: 26px;
+    height: 26px
   }
 
   #language {

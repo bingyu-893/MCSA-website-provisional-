@@ -20,7 +20,7 @@
   if (lang === 'yue') lang = 'hant';
   if (!langs.includes(lang)) lang = 'zh';
   if (document.body.dataset.page === 'admin') lang = 'zh';
-  let data = window.MCSA_DATA;
+  let data = null;
   let slide = 0,
     timer = null,
     paused = false;
@@ -120,7 +120,11 @@
             ${secondaryLinks}
           </nav>
           <label class="language-control">
-            <span aria-hidden="true">◎</span>
+            <span class="language-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                <path d="M2 5h12M7 2h1m4 3c-1.5 4-4 7-8 9M5 8l6 6m1 8 5-11 5 11m-8-4h6"/>
+              </svg>
+            </span>
             <select id="language" aria-label="${ui('切换语言', 'Change language', '切換語言')}">
               ${languageOptions}
             </select>
@@ -545,26 +549,49 @@
       render()
     }
   };
-  render();
-  intro();
   document.addEventListener('click', e => document.querySelectorAll('.nav-dropdown[open]').forEach(d => {
     if (!d.contains(e.target)) d.open = false
   }));
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') document.querySelectorAll('.nav-dropdown[open]').forEach(d => d.open = false)
   });
-  if (page !== 'admin' && !new URLSearchParams(location.search).has('preview') && window.MCSA_CONFIG.apiBase) {
-    fetch(window.MCSA_CONFIG.apiBase + '/site', {
-      signal: AbortSignal.timeout(6000)
-    }).then(r => {
-      if (!r.ok) throw Error();
-      return r.json()
-    }).then(r => {
-      data = r.data;
+  function connectionState(failed = false) {
+    const copy = {
+      zh: ['正在加载官网', '正在获取最新内容，请稍候。', '暂时无法加载官网', '请检查网络连接，稍后重试。', '重新加载'],
+      en: ['Loading MCSA', 'Getting the latest content. Please wait.', 'Unable to load the website', 'Please check your connection and try again.', 'Try again'],
+      hant: ['正在載入官網', '正在取得最新內容，請稍候。', '暫時無法載入官網', '請檢查網路連線，稍後重試。', '重新載入']
+    }[lang];
+    document.documentElement.lang = {zh: 'zh-CN', en: 'en', hant: 'zh-Hant'}[lang];
+    document.querySelector('#app').innerHTML = `<main id="main" class="connection-state" role="status"><img src="images/logo.png" alt="MCSA"><h1>${copy[failed ? 2 : 0]}</h1><p>${copy[failed ? 3 : 1]}</p>${failed ? `<button class="button primary" id="retry-content">${copy[4]}</button>` : ''}</main>`;
+    document.querySelector('#retry-content')?.addEventListener('click', () => location.reload());
+  }
+
+  let loading = false;
+  async function loadWebsite() {
+    if (loading) return;
+    loading = true;
+    clearInterval(timer);
+    window.MCSAHome.cleanup();
+    connectionState();
+    try {
+      const preview = window.MCSAContent.previewRequested();
+      const result = await (preview ? window.MCSAContent.previewData() : window.MCSAContent.load());
+      data = result.data;
+      if (preview) lang = 'zh';
+      document.documentElement.dataset.contentRevision = String(result.revision);
       render();
-      if (document.querySelector('.opening')) document.querySelector('#app').inert = true;
-      const hash = location.hash.slice(1);
-      if (hash) document.getElementById(hash)?.scrollIntoView()
-    }).catch(() => {});
-  } else if (location.hash) setTimeout(() => document.getElementById(location.hash.slice(1))?.scrollIntoView(), 50);
+      if (!preview) intro();
+      if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+    } catch (error) {
+      console.error('MCSA content loading failed:', error);
+      connectionState(true);
+    } finally {
+      loading = false;
+    }
+  }
+  // A browser Back navigation can restore the previous DOM without requesting HTML.
+  window.addEventListener('pageshow', event => {
+    if (event.persisted && !window.MCSAContent.previewRequested()) loadWebsite();
+  });
+  loadWebsite();
 })();
