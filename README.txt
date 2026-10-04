@@ -14,3 +14,16 @@ Secretariat article
 - Chinese and English pages use the supplied 640–649 assets in numeric/top-to-bottom order, including four leadership messages and External, Internal and Information Technology teams.
 - Images are original bytes, displayed at bounded widths, with no click-to-open links. The 24 July–10 August 2026 recruitment round and its ten IT places are historical.
 - content/departments/secretariat.json is an editable content reference, not a browser data dependency. Update both static HTML variants when editing it. English copy is translated from the supplied Chinese material and should receive the team's editorial review.
+
+Secretariat source and review workflow
+-------------------------------------
+Make Secretariat edits in MCSA-offical-website first. From that checkout, run:
+node scripts/export-secretariat.cjs ../MCSA-website-provisional-
+This exports Chinese/English static articles, scoped styles, structured content,
+and unchanged original images. No JavaScript is required by these static pages.
+Run here: node tests/secretariat-originals.cjs
+The original 640.png and 641.jpeg through 649.jpeg are tracked unchanged; their
+SHA-256 hashes and sizes are in content/departments/secretariat-originals.json.
+Use feature branches and draft PRs in both repositories. Hugo reviews before merge.
+The earlier Secretariat page already existed on main; this review covers source
+synchronisation and original-asset verification, not a new live deployment.
