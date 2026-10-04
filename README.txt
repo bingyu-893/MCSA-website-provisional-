@@ -9,3 +9,8 @@ Department pages (5 October 2026)
 - The existing assets/app (2).js was renamed to assets/app.js to match existing page script references; no new runtime JavaScript is loaded by the static department pages.
 - Traditional Chinese versions of the new article are pending translation; static pages offer Simplified Chinese and English.
 - Preview: python3 -m http.server 8766, then open /departments.html. Publishing this repository does not by itself verify deployment to www.monashcsa.org.
+
+Secretariat article
+- Chinese and English pages use the supplied 640–649 assets in numeric/top-to-bottom order, including four leadership messages and External, Internal and Information Technology teams.
+- Images are original bytes, displayed at bounded widths, with no click-to-open links. The 24 July–10 August 2026 recruitment round and its ten IT places are historical.
+- content/departments/secretariat.json is an editable content reference, not a browser data dependency. Update both static HTML variants when editing it. English copy is translated from the supplied Chinese material and should receive the team's editorial review.

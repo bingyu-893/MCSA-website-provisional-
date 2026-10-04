@@ -126,3 +126,20 @@ a.department-choice { text-decoration: none; }
 .static-header{border-bottom:1px solid var(--line);background:#fff}.static-header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:22px}.static-brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-weight:700;line-height:1.4}.static-brand img{flex:none}.static-brand small{display:block;font-weight:400;margin-top:6px}.static-header nav{display:flex;gap:20px;flex-wrap:wrap}.static-header nav a{color:var(--deep);text-decoration:none;font-weight:700;padding:10px 0}.static-directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-bottom:60px}.static-department-card{display:block;padding:32px;border-radius:22px;background:var(--red);color:white;text-decoration:none}.static-department-card h2{color:white}.static-department-card p{margin:18px 0}.static-department-card span{font-weight:700}.static-departments a:focus-visible{outline:3px solid #3164aa;outline-offset:5px}.static-departments .page-heading{margin-top:36px}.static-departments main{padding-bottom:40px}
 @media(max-width:760px){.static-header-inner{flex-direction:column;align-items:flex-start}.static-directory{grid-template-columns:1fr}.static-brand{font-size:14px}.static-departments .department-article{width:100%}}
 @media(prefers-reduced-motion:no-preference){.static-department-card{transition:transform .2s ease,box-shadow .2s ease}.static-department-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #861d2b24}}
+
+/* Secretariat: source-inspired blue and gold, with the shared MCSA layout. */
+.secretariat-article { --red:#0755a8; --deep:#073f7a; --wash:#edf5ff; --line:#d9e6f1; --article-gold:#f5d880; }
+.secretariat-article .article-heading { background:radial-gradient(ellipse at top right,#ffecb5,transparent 52%),linear-gradient(135deg,#f1f8ff,#e9f4ff); }
+.secretariat-article .article-section { background:linear-gradient(140deg,#f8fcff,white 45%); border-color:#d9e6f1; }
+.secretariat-article .story-step { background:#edf5ff; border-color:#9bbbd8; }
+.secretariat-article .story-step:nth-child(even) { background:#fff8e8; }
+.secretariat-article .article-subsection .article-photo { max-width:600px; }
+.secretariat-article blockquote { white-space:pre-line; }
+.secretariat-jumps { display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:28px 0; }
+.secretariat-jumps a { color:var(--deep);background:white;border:1px solid var(--line);border-radius:999px;padding:10px 18px;text-decoration:none;font-weight:700; }
+.secretariat-article .secretariat-tagline { text-align:center;font-weight:700;color:var(--deep); }
+.secretariat-keywords { padding:14px 20px;border-radius:12px;background:#eef6ff;color:var(--deep); }
+.secretariat-learning { margin:24px 0;padding:24px;border-left:4px solid var(--article-gold);background:#fff8e8; }
+.secretariat-source { margin:24px 0; }.secretariat-source summary { cursor:pointer;padding:14px;border:1px solid var(--line);border-radius:10px; }.secretariat-source .article-photo { max-width:600px; }
+.secretariat-article .article-subsection h4 { margin-top:28px;color:var(--deep);font-size:1.15rem; }
+@media(prefers-reduced-motion:no-preference) { .secretariat-jumps a { transition:background .2s ease; }.secretariat-jumps a:hover { background:#e4f0ff; } }
