@@ -1,0 +1,50 @@
+{
+  "description": "Supplied originals and reference screenshots, preserved byte-for-byte. Numbered files 640\u2013644 belong to Publicity, not Secretariat.",
+  "files": [
+    {
+      "file": "images/departments/publicity/640.png",
+      "sha256": "d252dd10769021b5765445a1da14b6c2bff8f3054af65217866a3c1012c40179",
+      "bytes": 766596
+    },
+    {
+      "file": "images/departments/publicity/641.png",
+      "sha256": "b0d54564e05d2ebc92ab4fb9054b86cdbd955a9da8e3796893a5d89184f4edfd",
+      "bytes": 99992
+    },
+    {
+      "file": "images/departments/publicity/642.png",
+      "sha256": "ea66978d7ee487b2b59dc3a1219240e3f011014c7890e031304715c919ae267f",
+      "bytes": 1863357
+    },
+    {
+      "file": "images/departments/publicity/643.png",
+      "sha256": "5793a0135e8ce088b1767c01911b28b530954c56abfa9fa25ab28c73c4a0c48c",
+      "bytes": 347896
+    },
+    {
+      "file": "images/departments/publicity/644.png",
+      "sha256": "44c10d446019ebd8c6da23dfe590ddbac293f75a0c710fdc1e4e3ca71fb39823",
+      "bytes": 77730
+    },
+    {
+      "file": "images/departments/publicity/wechat-source.png",
+      "sha256": "2471a4fcefb75b56c53cac0370fb9933ac8f92d54faf3f08ea436cfb61bc2268",
+      "bytes": 360054
+    },
+    {
+      "file": "images/departments/publicity/xiaohongshu-source.png",
+      "sha256": "7c08497cf09372cda236f4ef8f3ab1677f75c87bd292793787d6142443721ec7",
+      "bytes": 1460671
+    },
+    {
+      "file": "images/departments/publicity/events-source.png",
+      "sha256": "e8f5556b827ad71d6e803a6bfc6dfd5147afac834ed3e5ac7c7a638b1214cafb",
+      "bytes": 1711847
+    },
+    {
+      "file": "images/departments/publicity/application-source.png",
+      "sha256": "36aa652b5e0cce749aa0d387d114b3f2ac91542be1074fe533c7785deb150f9b",
+      "bytes": 595721
+    }
+  ]
+}
