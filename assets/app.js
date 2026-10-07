@@ -113,7 +113,11 @@
             ${secondaryLinks}
           </nav>
           <label class="language-control">
-            <span aria-hidden="true">◎</span>
+            <span class="language-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                <path d="M2 5h12M7 2h1m4 3c-1.5 4-4 7-8 9M5 8l6 6m1 8 5-11 5 11m-8-4h6"/>
+              </svg>
+            </span>
             <select id="language" aria-label="${ui('切换语言', 'Change language', '切換語言')}">
               ${languageOptions}
             </select>
