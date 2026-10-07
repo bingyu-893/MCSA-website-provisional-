@@ -707,8 +707,10 @@ textarea {
   bottom: 26px;
   right: 25px;
   z-index: 45;
-  width: 43px;
-  height: 43px;
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  cursor: pointer;
   font-size: 22px
 }
 
@@ -1755,3 +1757,8 @@ textarea {
     height: 38px
   }
 }
+
+/* Keep the shared back-to-top control accessible on static and rendered pages. */
+#back-top:focus-visible { outline: 3px solid var(--deep); outline-offset: 4px; }
+#back-top { bottom: max(26px, env(safe-area-inset-bottom)); right: max(25px, env(safe-area-inset-right)); }
+@media (max-width: 700px) { #back-top { bottom: max(18px, env(safe-area-inset-bottom)); right: max(16px, env(safe-area-inset-right)); } }
