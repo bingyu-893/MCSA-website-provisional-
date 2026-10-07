@@ -27,3 +27,14 @@ SHA-256 hashes and sizes are in content/departments/secretariat-originals.json.
 Use feature branches and draft PRs in both repositories. Hugo reviews before merge.
 The earlier Secretariat page already existed on main; this review covers source
 synchronisation and original-asset verification, not a new live deployment.
+
+Publicity department
+--------------------
+The Publicity page now follows the Secretariat article layout, with the supplied
+original photos, leader messages, three teams, requirements, benefits and past
+application notice. Make edits in the official repository, then run its
+scripts/export-publicity.cjs with this checkout as destination. Both language
+versions are static HTML. Images 640–644 are separate from the Secretariat files.
+content/departments/publicity-originals.json records checksums for the five
+original images and four unchanged source screenshots. Recruitment dates and
+account statistics are historical. English translation awaits editorial review.

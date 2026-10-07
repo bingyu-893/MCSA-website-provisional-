@@ -1,0 +1,255 @@
+{
+  "id": "publicity",
+  "articleLayout": "publicity",
+  "published": true,
+  "name": {
+    "zh": "宣传部",
+    "en": "Publicity"
+  },
+  "sourceUrl": "https://mp.weixin.qq.com/s/gT3Nz5I2dRgSO7U48GCA9A",
+  "recruitmentUrl": "https://mp.weixin.qq.com/s/gT3Nz5I2dRgSO7U48GCA9A",
+  "status": {
+    "zh": "往期招新 · 2026年2月26日–3月15日（墨尔本时间）。本轮报名已结束；最新招新安排请关注官方微信公众号。",
+    "en": "Past recruitment round · 26 February–15 March 2026 (Melbourne time). Applications for this round have closed. Follow the official WeChat account for future recruitment."
+  },
+  "about": [
+    {
+      "zh": "宣传部不仅是MCSA的门面担当\n更是梦想的现实主义者",
+      "en": "The Publicity team is the face of MCSA—and a team that turns ideas into reality."
+    },
+    {
+      "zh": "我们用内容讲述故事\n用创意打破边界\n用实力让MCSA的光芒\n触达更远的地方",
+      "en": "We tell stories through content, push boundaries through creativity and help MCSA reach a wider audience."
+    },
+    {
+      "zh": "如果你热爱创意表达\n擅长用影像和文字讲述故事\n欢迎加入我们！\n成为MCSA宣传部的一员\n一起书写属于MCSA的精彩篇章！",
+      "en": "If you love creative expression and telling stories through images and words, join the Publicity team and help write MCSA’s next chapter!"
+    }
+  ],
+  "leaders": [
+    {
+      "name": {
+        "zh": "关英辰",
+        "en": "Guan Yingchen"
+      },
+      "role": {
+        "zh": "部长",
+        "en": "Head"
+      },
+      "image": "642.png",
+      "quote": {
+        "zh": "研墨提笔抒胸臆，宣传部将携更多原创内容，为大家带来新的阅读体验。在这里，你将学会如何策划选题和搭建内容结构。宣传部是记录者也是建设者，愿我们一起，让更多人看见我们的声音！",
+        "en": "With pen and ink, we give our ideas a voice. The Publicity team will bring more original content and fresh reading experiences. Here, you will learn how to plan topics and structure content. We are both storytellers and builders—let’s help our voices reach more people!"
+      }
+    },
+    {
+      "name": {
+        "zh": "苏德慧 Erin",
+        "en": "Su Dehui · Erin"
+      },
+      "role": {
+        "zh": "副部长（小红书组）",
+        "en": "Deputy Head · Xiaohongshu"
+      },
+      "image": "643.png",
+      "quote": {
+        "zh": "不至于前，不止于此。",
+        "en": "Beyond what came before; onward from here."
+      }
+    },
+    {
+      "name": {
+        "zh": "孟恬伊 Ella",
+        "en": "Meng Tianyi · Ella"
+      },
+      "role": {
+        "zh": "副部长（活动对接组）",
+        "en": "Deputy Head · Event Liaison"
+      },
+      "image": "644.png",
+      "quote": {
+        "zh": "很高兴通过宣传部和大家认识，\n新学期合作愉快🫶🏻",
+        "en": "I’m delighted to meet everyone through the Publicity team. Looking forward to working together this semester 🫶🏻"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": {
+        "zh": "公众号组",
+        "en": "WeChat Official Account team"
+      },
+      "tagline": {
+        "zh": "用文字与设计，传递MCSA的声音",
+        "en": "Giving MCSA a voice through words and design"
+      },
+      "sourceImage": "wechat-source.png",
+      "sourceNote": {
+        "zh": "原文截图中的332篇原创内容、23,116位用户为当时的数据，不代表当前账号数据。",
+        "en": "The source screenshot records 332 original posts and 23,116 users at the time of the article; these are not current account figures."
+      },
+      "text": {
+        "zh": "我们运营着MCSA\n受众最广的官方账号！微信公众号🤝🏽\n最新资讯，活动安排\n每篇推文都是一场精致的阅读体验📖\n文案、排版、视觉美感\n每一个细节，我们都抓住👊🏽",
+        "en": "We manage MCSA’s WeChat Official Account, described in the source article as its widest-reaching official account. From the latest news to event information, we shape each article into an engaging reading experience, paying attention to copy, layout and visual design."
+      },
+      "duties": [
+        {
+          "zh": "负责MCSA微信公众号，内容策划与推文撰写。",
+          "en": "Plan content and write articles for the MCSA WeChat Official Account."
+        },
+        {
+          "zh": "参与公众号的编辑和排版，确保内容视觉美观且吸引人。",
+          "en": "Edit and lay out articles to make them visually appealing and engaging."
+        },
+        {
+          "zh": "结合热点和留学生关注点，创作公众号内容。",
+          "en": "Create content around topical issues and international students’ interests."
+        }
+      ],
+      "requirements": [
+        {
+          "zh": "我们接受新手的加入！",
+          "en": "Beginners are welcome!"
+        },
+        {
+          "zh": "文字功底扎实，逻辑清晰，具备较强创造力，擅长独立选题，拥有一定写作与信息整合能力。",
+          "en": "Strong writing, clear thinking and creativity, with the ability to choose topics independently and bring information together."
+        },
+        {
+          "zh": "具备基础公众号编辑和排版能力（如秀米、135编辑器等）。",
+          "en": "Basic WeChat editing and layout skills using tools such as Xiumi or 135 Editor."
+        },
+        {
+          "zh": "了解新媒体运营，有运营经验者优先。",
+          "en": "An understanding of social media operations; relevant experience is a plus."
+        }
+      ]
+    },
+    {
+      "name": {
+        "zh": "小红书组",
+        "en": "Xiaohongshu team"
+      },
+      "tagline": {
+        "zh": "连接留学生活的点滴需求",
+        "en": "Connecting with everyday student life"
+      },
+      "sourceImage": "xiaohongshu-source.png",
+      "text": {
+        "zh": "从校内活动到心理健康\n从最新活动预告到生活实用攻略\n我们时刻关注留学生的点滴需求\n\n以新媒体为桥梁\n让每一位在澳华人留学生的生活\n更加便捷、有趣、有温度💕",
+        "en": "From campus activities and mental wellbeing to event previews and practical guides, we keep international students’ everyday needs in mind.\n\nThrough social media, we help make life in Australia more convenient, enjoyable and welcoming for Chinese international students."
+      },
+      "duties": [
+        {
+          "zh": "撰写并发布留学生相关攻略，活动预告等内容。",
+          "en": "Write and publish student guides, event previews and related content."
+        },
+        {
+          "zh": "关注华人留学生的需求策划有影响力的选题，提高阅读量与互动率，结合热点优化内容，提升MCSA影响力。",
+          "en": "Plan relevant topics around Chinese international students’ needs, improve readership and engagement, and respond to trends to expand MCSA’s reach."
+        }
+      ],
+      "requirements": [
+        {
+          "zh": "我们接受新手的加入！",
+          "en": "Beginners are welcome!"
+        },
+        {
+          "zh": "具备一定的文案功底，能够撰写条理清晰、生动有趣的推文。",
+          "en": "Writing skills that produce clear, lively and engaging posts."
+        },
+        {
+          "zh": "了解小红书运营规则，熟悉热点玩法，擅长提高曝光率者加分。",
+          "en": "Understanding of Xiaohongshu operations and trends; skills in increasing visibility are a plus."
+        }
+      ]
+    },
+    {
+      "name": {
+        "zh": "活动对接组",
+        "en": "Event Liaison team"
+      },
+      "tagline": {
+        "zh": "记录每一幕精彩",
+        "en": "Capturing every memorable moment"
+      },
+      "sourceImage": "events-source.png",
+      "text": {
+        "zh": "我们是活动现场的记录者\n也是幕后宣传的魔法师\n\n精美海报制作\n长枪短炮定格每一幕精彩，\n让每场活动不仅值得参与，\n更值得被铭记！",
+        "en": "We document events as they happen and create the publicity behind the scenes.\n\nFrom carefully designed posters to photos and video, we capture the moments that make every event worth attending—and remembering."
+      },
+      "duties": [
+        {
+          "zh": "负责活动宣传视觉物料的制作，包括海报、短视频、现场拍摄等。",
+          "en": "Produce visual publicity materials, including posters, short videos and on-site photography."
+        },
+        {
+          "zh": "记录MCSA各类活动，拍摄高质量照片及视频，并进行后期剪辑。",
+          "en": "Document MCSA events with high-quality photos and videos, then edit the results."
+        },
+        {
+          "zh": "参与活动策划，与其他部门沟通协作，确保宣传效果最大化。",
+          "en": "Participate in event planning and work with other departments to maximise publicity impact."
+        }
+      ],
+      "requirements": [
+        {
+          "zh": "我们接受新手的加入！",
+          "en": "Beginners are welcome!"
+        },
+        {
+          "zh": "具备基础的摄影/摄像能力，熟练使用相机者优先。",
+          "en": "Basic photography or videography skills; camera experience is a plus."
+        },
+        {
+          "zh": "掌握基本的视频剪辑软件（如CapCut）或平面设计软件（如Canva）。",
+          "en": "Basic skills in video editing software such as CapCut or design tools such as Canva."
+        },
+        {
+          "zh": "细心负责，有团队合作精神，能适应活动期间的高强度工作。",
+          "en": "Careful, responsible and collaborative, with the ability to manage busy periods during events."
+        }
+      ]
+    }
+  ],
+  "benefits": [
+    {
+      "name": {
+        "zh": "技能掌握",
+        "en": "Build practical skills"
+      },
+      "text": {
+        "zh": "选题策划，结构搭建，\n文案写作，排版审美和基础数据分析，\n多项技能一次掌握，优化简历，\n为未来工作增加一份技能！",
+        "en": "Develop skills in topic planning, content structure, copywriting, layout and basic data analysis. Build experience for your CV and future work."
+      }
+    },
+    {
+      "name": {
+        "zh": "月度之星评选",
+        "en": "Monthly member recognition"
+      },
+      "text": {
+        "zh": "每月会投票选出部门月度优秀部员，\n获得实物奖励",
+        "en": "Each month, the department votes for an outstanding member, who receives a tangible reward."
+      }
+    },
+    {
+      "name": {
+        "zh": "大团建 OvO",
+        "en": "Team get-togethers OvO"
+      },
+      "text": {
+        "zh": "定期举办团建（或联谊）\n促进部门同学关系\n（自愿参加不强求）",
+        "en": "Regular team gatherings and social events help members get to know one another. Participation is voluntary."
+      }
+    }
+  ],
+  "historyNote": {
+    "zh": "部长记录从当前团队开始。下一届接任后，将保留本届名单，并按任期由近到远展示。",
+    "en": "Leadership records begin with the current team. When the next team takes over, this list will be retained, with terms displayed newest first."
+  },
+  "application": {
+    "zh": "原文报名时间：2026年2月26日–3月15日。\n扫描下方任意二维码，添加MCSA小助手，发送“宣传部”，获取后续面试信息。\n截止时间：墨尔本时间3月15日。每人最多报名两个部门。\n以下二维码来自已结束的招新轮次，不代表当前开放报名。",
+    "en": "Original application period: 26 February–15 March 2026.\nScan either QR code to add an MCSA assistant, then send “宣传部” for interview information.\nDeadline: 15 March, Melbourne time. Each person could apply to at most two departments.\nThese QR codes are from a past recruitment round and do not indicate that applications are currently open."
+  }
+}
